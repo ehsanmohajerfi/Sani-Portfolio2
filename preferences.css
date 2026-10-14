@@ -17,7 +17,7 @@
 .theme-toggle{border:1px solid var(--line);font-size:21px;min-width:42px;min-height:42px}
 .back-top{position:fixed;bottom:24px;right:24px;z-index:110;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--accent);color:#fff;font-size:26px;cursor:pointer;box-shadow:0 6px 24px #0003}
 .back-top[hidden]{display:none}
-[data-theme="dark"] .nav-shell{background:rgba(16,28,25,.94)}
+[data-theme="dark"] .nav-shell{background:#000}
 [data-theme="dark"] .links a{color:var(--muted)}
 [data-theme="dark"] .links a:hover,[data-theme="dark"] .links a[aria-current="page"]{color:var(--accent)}
 [data-theme="dark"] .pill{color:#c4e7d9;border-color:var(--line)}
@@ -29,7 +29,7 @@
 @media(min-width:901px) and (max-width:1100px){.links{gap:14px}.nav{gap:12px}.nav-cta{padding:12px}.brand,.brand img{width:125px}}
 @media(max-width:600px){.nav{gap:8px}.brand,.brand img{width:120px}.preferences{gap:5px}.back-top{bottom:18px;right:18px}}
 /* Story page uses its own layout and color tokens. */
-[data-theme="dark"] #nav,[data-theme="dark"] #nav.scrolled{background:rgba(16,28,25,.94)}
+[data-theme="dark"] #nav,[data-theme="dark"] #nav.scrolled{background:#000}
 [data-theme="dark"] .lang-toggle{background:#263c32}
 [data-theme="dark"] .lang-toggle button{color:#c4e7d9}
 html[data-theme="dark"][data-lang="en"] .lang-toggle [data-set="en"],html[data-theme="dark"][data-lang="fi"] .lang-toggle [data-set="fi"]{background:#365548;color:#fff}
@@ -43,3 +43,46 @@ html[data-theme="dark"][data-lang="en"] .lang-toggle [data-set="en"],html[data-t
 [data-theme="dark"] .approved,[data-theme="dark"] .bigcard,[data-theme="dark"] .advice{background:#0b2f2d}
 @media(min-width:901px) and (max-width:1200px){.nav-shell .links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--cream);padding:20px 24px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav-shell .links.open{display:flex}.nav-shell .mobile-toggle{display:block}}
 @media(min-width:900px) and (max-width:1100px){#nav .nav-links{display:none}#nav .menu-btn{display:grid}}
+/* Mobile, keyboard and contrast refinements. */
+.skip{position:absolute;left:-999px}
+html{scroll-padding-top:96px}
+main:focus{outline:none}
+.section-heading>*,.feature>*,.hero-grid>*,.timeline-card>*,.two-col>*{min-width:0}
+h1,h2,h3,a.link{overflow-wrap:anywhere}
+.brand img.logo-dark{object-fit:contain}
+.language-switch button[aria-pressed="true"]{color:#fff}
+[data-theme="dark"] .language-switch button[aria-pressed="true"]{color:#082c21}
+[data-theme="dark"] .button:not(.ghost):hover,[data-theme="dark"] .nav-cta:hover{background:#a2ebd2}
+.mobile-toggle{min-width:44px;min-height:44px;cursor:pointer}
+.links a,.footer a{display:inline-flex;align-items:center;min-height:36px}
+.skip:focus{position:fixed;background:#fff;color:#122825;z-index:500}
+#nav .skip:focus{z-index:500}
+.portfolio-return{position:fixed;right:16px;bottom:16px;z-index:70;background:#0b3b38;color:#fff;text-decoration:none;border-radius:999px;padding:11px 17px;font:600 13px Inter,system-ui,sans-serif;box-shadow:0 9px 30px #0003}
+.sheet[inert],.lightbox[inert]{pointer-events:none}
+#nav .nav-right{flex-shrink:0}
+#nav .lang-toggle button{min-width:36px}
+#nav .theme-toggle{flex-shrink:0}
+footer .brand{margin-inline:auto}
+@media(max-width:600px){
+ .hero h1{font-size:clamp(42px,11vw,58px)}
+ .project-visual .mock{font-size:clamp(32px,9vw,54px)}
+ .section-heading h2,.page-head h1{font-size:clamp(34px,10vw,43px)}
+ .page-head{padding:70px 0 45px}
+ .cta-panel{padding:30px 24px}
+ .cta-panel h2{font-size:clamp(34px,10vw,48px)}
+ .contact-card{padding:24px}
+ .actions .button{max-width:100%;text-align:center}
+ #nav .nav-inner{gap:8px}
+ #nav .nav-right{gap:4px}
+ #nav .lang-toggle button{padding:.4rem .5rem}
+ #nav .menu-btn{width:36px;height:42px}
+ #nav .theme-toggle{min-width:36px;min-height:42px}
+}
+@media(max-width:360px){
+ .nav-shell .brand,.nav-shell .brand img,#nav .brand,#nav .brand img{width:96px}
+ .nav-shell .nav{gap:6px}
+ .language-switch button{min-width:32px}
+ .nav-shell .theme-toggle{min-width:36px;min-height:36px}
+ .mobile-toggle{min-width:36px}
+}
+@media print{.nav-shell,.preferences,.back-top,.portfolio-return{display:none}body{background:#fff;color:#000}.section{padding:24px 0}.text-panel,.timeline-card,.project-card{break-inside:avoid}}

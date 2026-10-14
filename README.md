@@ -71,6 +71,24 @@ Repository: [ehsanmohajerfi/portfolio](https://github.com/ehsanmohajerfi/portfol
 
 Preferences are stored in the visitor's browser using `localStorage`. Contact and speaking requests open the visitor's email application; there is no server-side form submission. External chat and booking links open their respective services.
 
+## SEO, mobile and accessibility review
+
+- Added a unique page title and description, canonical URL, Open Graph sharing metadata, Twitter card metadata and WebPage/Person structured data to all six pages.
+- Added `sitemap.xml` and `robots.txt` for the production domain `ehsanmohajer.fi`.
+- Added Finnish page titles and descriptions that follow the language switch. Finnish currently shares URLs with English; separate indexable language URLs and `hreflang` are not implemented.
+- Updated the remaining main-page Tech Jyvä links to `https://techjyva.fi/`.
+- Made dark-mode headers solid black, retaining white headers in light mode.
+- Refined narrow-screen navigation controls, flexible headings, card layouts and touch targets, including styles for 320px screens.
+- Improved dark-mode button contrast, sticky-header anchor spacing, skip links and keyboard menu behavior.
+- Added focus trapping, focus restoration and keyboard image activation to My Story's menu and image viewer; closed dialogs are inert.
+- Kept My Story content visible when JavaScript is disabled.
+- Added explicit image dimensions and asynchronous decoding, prioritized the homepage portrait and optimized seven large photographs into web-sized JPEG files. Original media is retained.
+- Added print styles and repeatable source/interaction checks.
+
+The supplied WhatsApp username link is retained pending confirmation of a working public share link or phone-number URL. External chat and booking completion has not been tested. No browser rendering or Lighthouse/Core Web Vitals audit was available in this environment.
+
+SEO implementation references: [Google Search Central](https://developers.google.com/search/docs/fundamentals/get-started-developers) and [W3C target size guidance](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum).
+
 ## Run locally
 
 From the project directory:
@@ -83,7 +101,7 @@ Open [http://localhost:8080](http://localhost:8080). Alternatively, use VS Code 
 
 ## Validation
 
-JavaScript syntax and local asset references were checked during the update. The restaurant project link, all three direct contact links, and the speaking request links were checked in the HTML. Browser visual verification remains pending.
+JavaScript syntax and local asset references were checked during the update. The restaurant project link, all three direct contact links, and the speaking request links were checked in the HTML. Browser visual verification remains pending because no browser connection was available during the review.
 
 For a quick JavaScript syntax check:
 
@@ -91,6 +109,8 @@ For a quick JavaScript syntax check:
 node --check site.js
 node --check preferences.js
 node --check translations.js
+python3 scripts/check_site.py
+node scripts/check_interactions.mjs
 ```
 
 Before publishing, preview the pages at desktop and mobile widths, switch between English/Finnish and light/dark mode, and try the navigation, back-to-top buttons and external contact links.
@@ -106,7 +126,7 @@ git status --short
 
 git diff
 
-git add README.md CNAME index.html about.html experience.html projects.html contact.html site.css site.js preferences.css preferences.js translations.js assets my-story
+git add README.md CNAME index.html about.html experience.html projects.html contact.html site.css site.js preferences.css preferences.js translations.js assets my-story robots.txt sitemap.xml scripts
 
 git diff --cached --stat
 
