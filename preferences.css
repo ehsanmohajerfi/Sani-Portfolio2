@@ -86,3 +86,5 @@ footer .brand{margin-inline:auto}
  .mobile-toggle{min-width:36px}
 }
 @media print{.nav-shell,.preferences,.back-top,.portfolio-return{display:none}body{background:#fff;color:#000}.section{padding:24px 0}.text-panel,.timeline-card,.project-card{break-inside:avoid}}
+
+.footer-name{display:block;font-size:21px;color:#fff;margin-bottom:1rem}
