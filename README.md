@@ -55,7 +55,7 @@ Repository: [ehsanmohajerfi/portfolio](https://github.com/ehsanmohajerfi/portfol
 ### Direct contact
 
 - Displayed my email: [ehsanmohajer.fi@gmail.com](mailto:ehsanmohajer.fi@gmail.com).
-- Added a WhatsApp chat link using the confirmed Finnish number: [+358 41 714 6600](https://wa.me/358417146600).
+- Added the WhatsApp username chat link: [@ehsanmohajer](https://wa.me/ehsanmohajer).
 - Added a **Book a consultation** button linking to [Google Calendar booking](https://calendar.app.google/pavvEdH1zKbH6GrY6).
 - Added Finnish translations for the new contact content.
 
@@ -87,7 +87,7 @@ Preferences are stored in the visitor's browser using `localStorage`. Contact an
 - Set the homepage portrait’s CSS width and automatic height explicitly to preserve its original 4:5 crop with intrinsic image dimensions.
 - Added print styles and repeatable source/interaction checks.
 
-The WhatsApp link uses the confirmed Finnish phone number in international format. External chat and booking completion has not been tested. No browser rendering or Lighthouse/Core Web Vitals audit was available in this environment.
+The WhatsApp link uses the username provided by the site owner. External chat and booking completion has not been tested. No browser rendering or Lighthouse/Core Web Vitals audit was available in this environment.
 
 SEO implementation references: [Google Search Central](https://developers.google.com/search/docs/fundamentals/get-started-developers) and [W3C target size guidance](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum).
 
