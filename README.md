@@ -95,39 +95,27 @@ node --check translations.js
 
 Before publishing, preview the pages at desktop and mobile widths, switch between English/Finnish and light/dark mode, and try the navigation, back-to-top buttons and external contact links.
 
-## Push to the existing GitHub repository
+## Push updates to GitHub
 
-This redesign folder is currently a standalone folder without a `.git` directory. Clone the existing repository into a separate folder to preserve its history, then copy the updated website files into that checkout.
+This folder is connected to `https://github.com/ehsanmohajerfi/portfolio.git` on the `main` branch.
 
-The commands below assume the redesign folder is still at its current location and that `portfolio-github` does not already exist:
+From the project directory, review the changes, stage the website files, commit and push:
 
 ```sh
-cd /Users/EhsanMohajer/Downloads
-
-git clone https://github.com/ehsanmohajerfi/portfolio.git portfolio-github
-
-cp -R ehsan-portfolio-redesign-v1/. portfolio-github/
-
-cd portfolio-github
-
 git status --short
 
-git diff --stat
-```
+git diff
 
-Review the changes, then commit and push to the cloned repository's checked-out branch:
-
-```sh
-git add README.md index.html about.html experience.html projects.html contact.html site.css site.js preferences.css preferences.js translations.js assets my-story
+git add README.md CNAME index.html about.html experience.html projects.html contact.html site.css site.js preferences.css preferences.js translations.js assets my-story
 
 git diff --cached --stat
 
-git commit -m "Update portfolio branding, Finnish support, themes and speaking information"
+git commit -m "Update portfolio content and features"
 
-git push
+git push origin main
 ```
 
-If the repository already has a local checkout, copy the website files into that checkout instead of cloning again. Review any existing changes before staging. GitHub authentication and write access to the repository are required to push.
+GitHub authentication and write access to the repository are required to push.
 
 ## Hosting
 
