@@ -1,11 +1,21 @@
 (() => {
   const root = document.documentElement;
   const menu = document.querySelector('[data-menu]'), nav = document.querySelector('.links');
-  function closeMenu() { nav?.classList.remove('open'); menu?.setAttribute('aria-expanded', 'false'); }
+  function closeMenu() {
+    nav?.classList.remove('open'); menu?.setAttribute('aria-expanded', 'false');
+    document.querySelectorAll('.project-menu').forEach(details => { details.open = false; });
+  }
   menu?.addEventListener('click', () => menu.setAttribute('aria-expanded', String(nav.classList.toggle('open'))));
   document.querySelectorAll('.links a').forEach(a => a.addEventListener('click', closeMenu));
   document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      const openSubmenu = document.querySelector('.project-menu[open]');
+      if (openSubmenu) { openSubmenu.open = false; openSubmenu.querySelector('summary').focus(); return; }
+    }
     if (e.key === 'Escape' && nav?.classList.contains('open')) { closeMenu(); menu?.focus(); }
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.project-nav')) document.querySelectorAll('.project-menu').forEach(details => { details.open = false; });
   });
   window.addEventListener('resize', () => { if (window.innerWidth > 1200) closeMenu(); });
   const records = [];

@@ -7,7 +7,7 @@ import re
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = list(ROOT.glob('*.html')) + [ROOT / 'my-story/index.html']
+PAGES = list(ROOT.glob('*.html')) + [ROOT / 'my-story/index.html', ROOT / 'projects/hackathons.html']
 
 class Page(HTMLParser):
     def __init__(self, path):

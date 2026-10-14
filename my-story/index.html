@@ -357,6 +357,12 @@ footer .brand{justify-content:center;color:#fff;margin-bottom:1rem}
   .hero{min-height:auto}
   section{break-inside:avoid}
 }
+
+.journey-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:35px}
+.journey-grid article{background:white;border:1px solid #d9e7e2;border-radius:16px;padding:25px;color:#173632;box-shadow:0 4px 16px rgba(4,53,43,.04)}
+.journey-grid h3{font-size:clamp(21px,2.2vw,27px);margin:10px 0}.journey-grid p{line-height:1.75;color:#4d625b}
+.journey-grid small{font-size:11px;letter-spacing:.13em;color:#0b8875}.journey-next{text-align:center;margin-top:25px}
+@media(max-width:720px){.journey-grid{grid-template-columns:1fr}}
 </style><link rel="stylesheet" href="../preferences.css">
 <link rel="canonical" href="https://ehsanmohajer.fi/my-story/"><meta property="og:type" content="website"><meta property="og:site_name" content="Ehsan Mohajer"><meta property="og:title" content="My Story | Ehsan Mohajer’s Journey to Entrepreneurship"><meta property="og:description" content="Read Ehsan Mohajer’s journey in Finland, from software studies and student mentoring to entrepreneurship, with practical lessons and personal reflections."><meta property="og:url" content="https://ehsanmohajer.fi/my-story/"><meta property="og:image" content="https://ehsanmohajer.fi/assets/ehsan-mohajer-web.jpg"><meta property="og:image:alt" content="Ehsan Mohajer"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "My Story | Ehsan Mohajer’s Journey to Entrepreneurship", "description": "Read Ehsan Mohajer’s journey in Finland, from software studies and student mentoring to entrepreneurship, with practical lessons and personal reflections.", "url": "https://ehsanmohajer.fi/my-story/", "isPartOf": {"@type": "WebSite", "name": "Ehsan Mohajer Portfolio", "url": "https://ehsanmohajer.fi/"}, "about": {"@type": "Person", "@id": "https://ehsanmohajer.fi/#ehsan", "name": "Ehsan Mohajer", "url": "https://ehsanmohajer.fi/", "jobTitle": "Software Developer and Entrepreneur", "image": "https://ehsanmohajer.fi/assets/ehsan-mohajer-web.jpg"}}</script><noscript><style>.io,.rise{opacity:1;transform:none;animation:none}img[data-zoom]{cursor:default}</style></noscript></head>
 
@@ -406,18 +412,18 @@ footer .brand{justify-content:center;color:#fff;margin-bottom:1rem}
     <div class="hero-grid">
       <div>
         <div class="hero-tag rise"><i class="ph-fill ph-buildings" aria-hidden="true"></i>
-          <span class="lang-en">Founder of Sani Studio</span><span class="lang-fi">Sani Studion perustaja</span>
+          <span class="lang-en">My journey in Finland</span><span class="lang-fi">Matkani Suomessa</span>
         </div>
         <h1 class="rise">
           <span class="lang-en">Hi, I'm Ehsan.<br>This is <em>my journey.</em></span>
           <span class="lang-fi">Hei, olen Ehsan.<br>Tämä on <em>tarinani.</em></span>
         </h1>
         <p class="hero-lead rise">
-          <span class="lang-en">From a snowy January arrival in Finland to founding Sani Studio in Jyväskylä: a story about building digital things that work, and what I learned on the way.</span>
-          <span class="lang-fi">Lumisesta tammikuun saapumisesta Suomeen Sani Studion perustamiseen Jyväskylässä: tarina toimivien digitaalisten ratkaisujen rakentamisesta ja siitä, mitä opin matkalla.</span>
+          <span class="lang-en">From arriving in Finland during a freezing winter to studying, working at Witas and starting my own business: the people and decisions that shaped my journey.</span>
+          <span class="lang-fi">Saavuin Suomeen kylmänä talvena, opiskelin ja pääsin töihin Witasille ennen yrittäjyyden aloittamista. Tämä on tarina ihmisistä ja valinnoista, jotka muuttivat suuntaani.</span>
         </p>
         <div class="hero-actions rise">
-          <a href="#story" class="btn btn-light"><span class="lang-en">Read my story</span><span class="lang-fi">Lue tarinani</span><i class="ph-bold ph-arrow-down" aria-hidden="true"></i></a>
+          <a href="#finland-beginning" class="btn btn-light"><span class="lang-en">Read my story</span><span class="lang-fi">Lue tarinani</span><i class="ph-bold ph-arrow-down" aria-hidden="true"></i></a>
           <a href="#results" class="btn btn-ghost"><span class="lang-en">Jump to results</span><span class="lang-fi">Siirry tuloksiin</span></a>
         </div>
       </div>
@@ -448,7 +454,7 @@ footer .brand{justify-content:center;color:#fff;margin-bottom:1rem}
       <div class="facts">
         <div class="fact"><i class="ph-fill ph-map-pin" aria-hidden="true"></i><div><small><span class="lang-en">Location</span><span class="lang-fi">Sijainti</span></small><strong>Jyväskylä, Finland</strong></div></div>
         <div class="fact"><i class="ph-fill ph-graduation-cap" aria-hidden="true"></i><div><small><span class="lang-en">Studies</span><span class="lang-fi">Opinnot</span></small><strong><span class="lang-en">Master's in Full-Stack Development, JAMK</span><span class="lang-fi">Full-Stack-kehityksen YAMK, JAMK</span></strong></div></div>
-        <div class="fact"><i class="ph-fill ph-briefcase" aria-hidden="true"></i><div><small><span class="lang-en">Company</span><span class="lang-fi">Yritys</span></small><strong>Sani Studio</strong></div></div>
+        <div class="fact"><i class="ph-fill ph-briefcase" aria-hidden="true"></i><div><small><span class="lang-en">Company</span><span class="lang-fi">Yritys</span></small><strong>Tech Jyvä</strong></div></div>
       </div>
     </div>
 
@@ -472,12 +478,28 @@ footer .brand{justify-content:center;color:#fff;margin-bottom:1rem}
   </div>
 </section>
 
+
+<section id="finland-beginning" class="section" style="background:#f1f7f4;color:#173632">
+ <div class="container">
+  <div class="section-head center-head io"><div class="kicker"><span class="lang-en">The beginning · Finland</span><span class="lang-fi">Alku · Suomi</span></div>
+  <h2 class="section-title"><span class="lang-en">From −30°C to opportunity</span><span class="lang-fi">−30 asteesta mahdollisuuksiin</span></h2>
+  <p><span class="lang-en">The earlier chapter of my story: adaptation, language, learning and the people who helped open a professional door.</span><span class="lang-fi">Tarinani aiempi luku: sopeutuminen, kieliopinnot, oppiminen ja ihmiset, jotka auttoivat avaamaan oven työelämään.</span></p></div>
+  <div class="journey-grid">
+    <article><small>01 / FINLAND</small><h3><span class="lang-en">Arriving in the cold</span><span class="lang-fi">Saapuminen talven keskelle</span></h3><p><span class="lang-en">I came to Finland with my family during a winter that reached around −30°C. We faced the uncertainty of building a new life in an unfamiliar environment.</span><span class="lang-fi">Saavuin Suomeen perheeni kanssa talvena, jolloin pakkasta oli noin −30 astetta. Uuden elämän rakentaminen vieraassa ympäristössä toi mukanaan epävarmuutta.</span></p></article>
+    <article><small>02 / LEARNING</small><h3><span class="lang-en">Language and JAMK</span><span class="lang-fi">Kieliopinnot ja JAMK</span></h3><p><span class="lang-en">I studied Finnish and enrolled in Full Stack Software Development at JAMK. Academic progress mattered, but remote studies also made building professional connections difficult.</span><span class="lang-fi">Opiskelin suomea ja aloitin Full Stack -ohjelmistokehityksen opinnot JAMKissa. Opinnot etenivät, mutta etäopiskelu vaikeutti ammatillisten verkostojen syntymistä.</span></p></article>
+    <article><small>03 / CONNECTIONS</small><h3><span class="lang-en">Talent Boost and hackathons</span><span class="lang-fi">Talent Boost ja hackathonit</span></h3><p><span class="lang-en">JAMK Talent Boost activities, career events and a Viitasaari hackathon helped me connect with local employers and encounter Witas for the first time.</span><span class="lang-fi">JAMKin Talent Boost -toiminta, uratapahtumat ja Viitasaaren hackathon auttoivat tutustumaan paikallisiin työnantajiin ja Witas Oy:hyn.</span></p></article>
+    <article><small>04 / WORK</small><h3><span class="lang-en">The 100 km commute</span><span class="lang-fi">100 kilometrin työmatka</span></h3><p><span class="lang-en">I accepted a three-month traineeship with a roughly 100 km journey each way to Viitasaari. It was about experience, not university credits. That opportunity led to a professional role at Witas.</span><span class="lang-fi">Otin vastaan kolmen kuukauden harjoittelun Viitasaarella, noin 100 kilometrin päässä Jyväskylästä. Tavoitteena oli työkokemus, ei opintopisteet. Harjoittelu avasi tien työtehtävään Witasilla.</span></p></article>
+  </div>
+  <div class="journey-next"><a href="../projects/hackathons.html" class="btn btn-teal"><span class="lang-en">Explore my hackathon work ↗</span><span class="lang-fi">Tutustu hackathon-työhöni ↗</span></a></div>
+ </div>
+</section>
+
 <!-- ============ Story timeline ============ -->
 <section id="story" class="section story">
   <div class="container">
     <div class="section-head center-head io">
       <div class="kicker"><i class="ph-fill ph-rocket-launch" aria-hidden="true"></i><span class="lang-en">The entrepreneurial path</span><span class="lang-fi">Yrittäjän polku</span></div>
-      <h2 class="section-title"><span class="lang-en">Building Sani Studio</span><span class="lang-fi">Sani Studion rakentaminen</span></h2>
+      <h2 class="section-title"><span class="lang-en">From Witas to entrepreneurship</span><span class="lang-fi">Witasilta yrittäjyyteen</span></h2>
       <p><span class="lang-en">How a vision for clear, purposeful digital solutions became a reality in Central Finland.</span><span class="lang-fi">Miten visio selkeistä, tarkoituksenmukaisista digitaalisista ratkaisuista muuttui todeksi Keski-Suomessa.</span></p>
     </div>
 

@@ -1,11 +1,18 @@
 window.finnishTranslations = {
+  "Three Hackathons at Witas": "Kolme hackathonia Witasilla",
+  "During my work at Witas, I helped host three hackathons that brought students and regional businesses together to explore practical challenges, AI tools and prototypes. Role: event coordination, facilitation and mentoring in collaboration with the Witas team.": "Witasilla työskennellessäni olin mukana toteuttamassa kolmea hackathonia, joissa opiskelijat ja alueen yritykset tutkivat käytännön haasteita, tekoälytyökaluja ja prototyyppejä. Roolini: tapahtumakoordinointi, fasilitointi ja mentorointi yhteistyössä Witasin tiimin kanssa.",
+  "Explore the case study ↗": "Tutustu tapausesimerkkiin ↗",
+  "Helped host three collaborative hackathons connecting students, AI experimentation and real challenges from regional businesses.": "Olin mukana järjestämässä kolmea hackathonia, jotka yhdistivät opiskelijat, tekoälykokeilut ja alueen yritysten todelliset haasteet.",
+  "Read hackathon case study ↗": "Lue hackathon-tapausesimerkki ↗",
+  "From −30°C to new opportunities.": "−30 asteesta uusiin mahdollisuuksiin.",
+  "My journey began with a freezing winter arrival, continued through Finnish studies, JAMK, Talent Boost and the Viitasaari hackathon, and led to work at Witas and entrepreneurship. Read the people, choices and lessons behind the timeline.": "Matkani alkoi hyytävän kylmästä talvisaapumisesta Suomeen. Suomen opinnot, JAMK, Talent Boost ja Viitasaaren hackathon johdattivat minut Witasille töihin ja yrittäjyyteen. Lue matkani ihmisistä, valinnoista ja opeista.",
+  "Regional digital projects, helping host three hackathons, collaboration with local businesses and students, mentoring and practical innovation in Central Finland.": "Alueelliset digihankkeet, kolmen hackathonin järjestäminen, yhteistyö paikallisten yritysten ja opiskelijoiden kanssa, mentorointi sekä käytännön innovaatiotyö Keski-Suomessa.",
   "Work phone": "Työpuhelin",
   "Professional profile": "Ammatillinen profiili",
   "Portrait of Ehsan Mohajer": "Ehsan Mohajerin muotokuva",
   "Choose the English or Finnish version of my updated professional résumé. Both include my latest contact details, completed JAMK degree, Spinout experience and MILEstone mentoring.": "Valitse päivitetty ansioluettelo englanniksi tai suomeksi. Molemmissa on uusimmat yhteystietoni, JAMKissa suoritettu ylempi AMK -tutkinto sekä kokemukseni Spinoutista ja MILEstone-mentoroinnista.",
   "My résumé": "Ansioluetteloni",
   "Download my updated résumé in English or Finnish, or explore the full professional timeline.": "Lataa päivitetty ansioluetteloni englanniksi tai suomeksi tai tutustu koko työkokemukseeni.",
-
   "Professional CV": "Ammatillinen CV",
   "Download my latest résumé in English or Finnish.": "Lataa uusin ansioluetteloni englanniksi tai suomeksi.",
   "Partnerships Coordinator · Spinout (unpaid role)": "Kumppanuuskoordinaattori · Spinout (palkaton rooli)",
@@ -26,7 +33,6 @@ window.finnishTranslations = {
   "Choose the English or Finnish version of my updated professional résumé.": "Valitse päivitetty ansioluettelo englanniksi tai suomeksi.",
   "Download CV (English) ↓": "Lataa CV (englanniksi) ↓",
   "Lataa CV (suomeksi) ↓": "Lataa CV (suomeksi) ↓",
-
   "Skip to content": "Siirry sisältöön",
   "Home": "Etusivu",
   "About": "Tietoa minusta",
@@ -198,5 +204,7 @@ window.finnishTranslations = {
   "MORE PROJECTS": "LISÄÄ PROJEKTEJA",
   "Discover more of my projects": "Tutustu muihin projekteihini",
   "Explore my other projects, products and business solutions on the Tech Jyvä website.": "Tutustu muihin projekteihini, tuotteisiini ja yritysratkaisuihini Tech Jyvän verkkosivuilla.",
-  "Discover more projects at Tech Jyvä ↗": "Tutustu muihin projekteihin Tech Jyvällä ↗"
+  "Discover more projects at Tech Jyvä ↗": "Tutustu muihin projekteihin Tech Jyvällä ↗",
+  "Hackathons": "Hackathonit",
+  "Projects submenu": "Projektien alavalikko"
 };
