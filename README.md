@@ -142,3 +142,22 @@ GitHub authentication and write access to the repository are required to push.
 ## Hosting
 
 The website can be served directly by GitHub Pages or another static host. For GitHub Pages, configure the repository's publishing source to use the branch containing these files and the repository root. Keep `CNAME` aligned with the intended custom domain, and verify the domain and HTTPS configuration after deployment.
+
+## October 2026 factual and CV updates
+
+- Spinout Partnerships Coordinator described explicitly as an **unpaid role** (since September 2026).
+- Volunteer mentoring identified as **MILEstone at International House Jyväskylä** (February–May 2026).
+- JAMK Master of Engineering graduation confirmed as **4 June 2026**; 60 ECTS, Full Stack Software Development.
+- Added public-facing English and Finnish PDF CV files under `assets/`, and CV downloads on About and Experience.
+- No diploma or transcript has been made public, since they contain personal identifiers.
+
+
+## Contact & CV update (October 2026)
+
+Personal email: ehsanmohajer.fi@gmail.com; work phone: +358 41 714 6600. The CV download section on Experience uses an existing portrait and links to updated searchable English/Finnish PDFs. Contact page uses a phone link rather than an unverified WhatsApp username URL.
+
+## CV layout fix (October 2026)
+
+- About shows a real rendered CV preview, automatically matching the EN/FI page language, plus downloadable PDFs.
+- Experience portrait has constrained width, height and cropping.
+- Contact has the requested WhatsApp username URL. **Note:** `wa.me` normally supports phone-number paths, not usernames. If the link fails, replace it with a verified WhatsApp share/contact URL.

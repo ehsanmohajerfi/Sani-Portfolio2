@@ -1,0 +1,23 @@
+/* Bilingual, photo-led professional résumé display */
+.cv-showcase{display:grid;grid-template-columns:minmax(200px,310px) minmax(0,1fr);gap:clamp(22px,4vw,54px);align-items:center;padding:clamp(20px,4vw,45px)}
+.cv-portrait{margin:0}.cv-portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:18px;background:#e8efea}.cv-portrait figcaption{font-size:12px;color:var(--muted);margin-top:12px}
+.cv-copy h2,.cv-about-link h2{font-size:clamp(30px,3.5vw,48px);letter-spacing:-.05em;line-height:1.1;margin-bottom:16px}
+.cv-copy p{max-width:620px;line-height:1.75}.cv-contact{display:flex;flex-wrap:wrap;gap:10px 25px;margin:18px 0}.cv-contact a{color:var(--accent);font-weight:700;overflow-wrap:anywhere}
+.cv-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.cv-actions .button{white-space:normal;text-align:center}
+.cv-about-link{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+@media(max-width:700px){.cv-showcase{grid-template-columns:1fr}.cv-portrait{max-width:260px}.cv-actions .button{width:100%}}
+
+/* Corrected CV layouts: prevent oversized portrait and show real PDF preview */
+.cv-showcase{grid-template-columns:minmax(0,300px) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,58px)}
+.cv-portrait{width:100%;max-width:300px;min-width:0;align-self:center}
+.cv-portrait img{display:block;width:100%;height:auto;max-height:380px;aspect-ratio:4 / 5;object-fit:cover;object-position:center 35%;border-radius:16px}
+.cv-portrait figcaption{line-height:1.5}
+.cv-about-showcase{grid-template-columns:minmax(0,370px) minmax(0,1fr);align-items:center}
+.cv-document-previews{width:100%;max-width:370px;min-width:0;position:relative}
+.cv-document-previews a{display:block}
+.cv-document-image{width:100%;height:auto;max-height:470px;object-fit:contain;object-position:top center;background:white;border-radius:10px;border:1px solid var(--line);box-shadow:0 14px 35px rgba(3,31,25,.12)}
+.cv-document-fi{display:none}
+html[lang="fi"] .cv-document-en{display:none}
+html[lang="fi"] .cv-document-fi{display:block}
+.cv-preview-note{font-size:12px;color:var(--muted);margin-top:18px}
+@media(max-width:700px){.cv-showcase,.cv-about-showcase{grid-template-columns:minmax(0,1fr)}.cv-portrait{max-width:280px;margin-inline:auto}.cv-document-previews{max-width:290px;margin-inline:auto}.cv-document-image{max-height:390px}.cv-copy{text-align:left}}
