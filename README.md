@@ -31,6 +31,7 @@ Repository: [ehsanmohajerfi/portfolio](https://github.com/ehsanmohajerfi/portfol
 - Connected the existing bilingual My Story page to the shared language preference.
 - Saved the language selection across pages and repeat visits.
 - Added back-to-top buttons to the main pages and retained the existing button on My Story.
+- Made header My Story links open in a separate tab/window.
 - Added mobile navigation controls, keyboard focus styles and reduced-motion support for scrolling.
 
 ### Projects
@@ -83,6 +84,7 @@ Preferences are stored in the visitor's browser using `localStorage`. Contact an
 - Added focus trapping, focus restoration and keyboard image activation to My Story's menu and image viewer; closed dialogs are inert.
 - Kept My Story content visible when JavaScript is disabled.
 - Added explicit image dimensions and asynchronous decoding, prioritized the homepage portrait and optimized seven large photographs into web-sized JPEG files. Original media is retained.
+- Set the homepage portrait’s CSS width and automatic height explicitly to preserve its original 4:5 crop with intrinsic image dimensions.
 - Added print styles and repeatable source/interaction checks.
 
 The WhatsApp link uses the confirmed Finnish phone number in international format. External chat and booking completion has not been tested. No browser rendering or Lighthouse/Core Web Vitals audit was available in this environment.
