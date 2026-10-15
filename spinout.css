@@ -1,0 +1,8 @@
+/* Spinout team feature — October 2026 */
+.spinout-gallery{display:grid;grid-template-columns:1.18fr 1fr;gap:1.25rem;align-items:stretch;margin-top:2rem}
+.spinout-photo{margin:0;min-width:0}.spinout-photo img{display:block;width:100%;height:100%;min-height:260px;max-height:460px;object-fit:cover;object-position:center;border-radius:16px}
+.spinout-photo figcaption{font-size:.78rem;opacity:.75;padding-top:.6rem}.spinout-points{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.3rem}
+.spinout-points article{border:1px solid rgba(88,130,114,.25);border-radius:13px;padding:1.25rem}.spinout-points span{color:#087d63;font-size:.75rem;letter-spacing:.08em}.spinout-points h3{font-size:1.07rem;margin:.85rem 0 .4rem}.spinout-points p{font-size:.92rem;opacity:.83;margin:0}
+.spinout-story-layout,.spinout-about-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}.spinout-story-layout .spinout-photo img{max-height:400px}
+.spinout-about-layout>img{display:block;width:100%;height:auto;max-height:390px;object-fit:cover;border-radius:15px}
+@media(max-width:760px){.spinout-gallery,.spinout-points,.spinout-story-layout,.spinout-about-layout{grid-template-columns:1fr}.spinout-photo img{height:auto;min-height:0;max-height:none;aspect-ratio:4/3;object-fit:cover}}
