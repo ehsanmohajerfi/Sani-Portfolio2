@@ -97,6 +97,10 @@ From the project directory:
 
 ```sh
 python3 -m http.server 8080
+
+or 
+
+py -m http.server 8080
 ```
 
 Open [http://localhost:8080](http://localhost:8080). Alternatively, use VS Code Live Server and open `index.html`.
